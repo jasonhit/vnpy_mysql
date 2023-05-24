@@ -123,7 +123,7 @@ class DbTickData(Model):
 
     class Meta:
         database: PeeweeMySQLDatabase = db
-        indexes: tuple = ((("symbol", "exchange", "datetime"), True),)
+        #indexes: tuple = ((("symbol", "exchange", "datetime"), False),)
 
 
 class DbBarOverview(Model):
